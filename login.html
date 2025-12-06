@@ -90,14 +90,14 @@ function validateForm() {
         return false;
     }
 
-    // Email validation
+
     let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
     if (!email.match(emailPattern)) {
         errorBox.textContent = "Enter a valid email!";
         return false;
     }
 
-    // Password min length check
+    
     if (pass.length < 5) {
         errorBox.textContent = "Password must be at least 5 characters!";
         return false;
